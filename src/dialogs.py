@@ -78,10 +78,10 @@ class SettingsDialog(QDialog):
         # dialog buttons
         buttons_layout = QHBoxLayout()
         buttons_layout.addStretch()
-        self.cancel_btn = QPushButton("Cancel")
         self.save_btn = QPushButton("Save")
-        buttons_layout.addWidget(self.cancel_btn)
+        self.cancel_btn = QPushButton("Cancel")
         buttons_layout.addWidget(self.save_btn)
+        buttons_layout.addWidget(self.cancel_btn)
         self.layout.addLayout(buttons_layout)
 
         self.cancel_btn.clicked.connect(self.reject)

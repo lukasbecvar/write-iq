@@ -97,9 +97,6 @@ class TextHelperApp(QWidget):
         header_layout = QHBoxLayout()
         header_layout.setContentsMargins(0, 0, 0, 0)
 
-        self.title_label = QLabel("WriteIQ")
-        self.title_label.setStyleSheet("font-size: 18px; font-weight: bold; color: #f2f2f2;")
-
         self.settings_btn = QPushButton("⚙️ Settings")
         self.settings_btn.setCursor(Qt.CursorShape.PointingHandCursor)
         self.settings_btn.setFixedHeight(26)
@@ -118,7 +115,6 @@ class TextHelperApp(QWidget):
         )
         self.settings_btn.clicked.connect(self.open_settings)
 
-        header_layout.addWidget(self.title_label)
         header_layout.addStretch()
         header_layout.addWidget(self.settings_btn)
         self.layout.addLayout(header_layout)
@@ -178,8 +174,8 @@ class TextHelperApp(QWidget):
         self.submit_btn.clicked.connect(self.on_submit)
         self.clear_btn = QPushButton("Clear")
         self.clear_btn.clicked.connect(self.clear_all)
-        submit_layout.addWidget(self.submit_btn)
         submit_layout.addWidget(self.clear_btn)
+        submit_layout.addWidget(self.submit_btn)
         self.layout.addLayout(submit_layout)
 
         # status

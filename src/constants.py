@@ -12,6 +12,7 @@ LANGUAGE_LABEL_BY_CODE = {language.code: language.label for language in Language
 
 MODEL_OPTIONS = [
     (DEFAULT_MODEL_NAME, "Gemini 2.5 Flash (speed)"),
+    ("gemini-2.5-pro", "Gemini 2.5 Pro (balanced)"),
     ("gemini-1.5-pro", "Gemini 1.5 Pro (quality)"),
 ]
 

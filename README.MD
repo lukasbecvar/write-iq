@@ -10,7 +10,7 @@ No browser, no login.
 - **Grammar mode** – Automatically corrects grammar in any language  
 - **Translate mode** – Translates text between languages  
 - **Modern dark UI** – Minimalist smooth feel design  
-- **Configurable Gemini models** – Pick between flash (speed) and pro (quality)  
+- **Configurable Gemini models** – Pick between 2.5 Flash (speed), 2.5 Pro (balanced) a 1.5 Pro (quality)  
 
 ## Installation
 ### Clone the repository
